@@ -1,0 +1,23 @@
+{
+  "name": "js_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execute": "tsc && node -e 'console.log(process.argv[1])' | node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakshlohar1/typescript-AdvanceJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dakshlohar1/typescript-AdvanceJS/issues"
+  },
+  "homepage": "https://github.com/dakshlohar1/typescript-AdvanceJS#readme",
+  "dependencies": {
+    "typescript": "4.7.4"
+  }
+}
