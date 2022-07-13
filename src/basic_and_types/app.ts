@@ -10,13 +10,14 @@ let hasHobbies: boolean = false;
 
 
 //assign types
-//let myRealAge; //it has type of 'any'
-let myRealAge: number;
+let myRealAge; //it has type of 'any'
+// let myRealAge: number;
 myRealAge = 27;
+myRealAge = 'good';
 
 
 //array
-let hobbies: any[] = ['Cricket', 'Sports']
+let hobbies: any[] = ['Cricket', 'Sports',45,45.66,{'d':20}]
 console.log(typeof hobbies);
 // allowed in this  case hobbies = [100,200] 
 
@@ -56,7 +57,7 @@ console.log(car);
 
 //functions
 function returnMyName(): string { // the return type is fixed
-	return myName;
+	return "Max";
 }
 
 console.log(returnMyName());
@@ -96,7 +97,7 @@ let userData: { name: string, age: number } = {
 //complex type mixins of everything
 let complex: { data: number[], output: (all : boolean) => number[] } = {
 	data: [100, 3.99, 10],
-	output: function(all : boolean): number[]{
+	output: function(all){
 		return this.data;
 	}
 };
@@ -109,7 +110,7 @@ type Complex = { data: number[], output: (all : boolean) => number[] };
 
 let complex2: Complex= {
 	data: [100, 3.99, 10],
-	output: function(all : boolean): number[]{
+	output: function(all){
 		return this.data;
 	}
 };

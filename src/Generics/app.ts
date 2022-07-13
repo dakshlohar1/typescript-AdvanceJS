@@ -8,7 +8,7 @@ console.log(echo({age: 29, name: "Daksh"}));
 
 //Better Generic
 
-function betterEcho<T>(data: any){ //it could be any character other than T.
+function betterEcho<T>(data: T){ //it could be any character other than T.
     return data;  //here we use (<>) to aggign which type of data we are receiving and than assign it to T.
 }
 
