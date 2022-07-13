@@ -1,24 +1,23 @@
 // Sync
 function printMe() {
-  console.log('print me');
+  console.log("print me");
 }
 
 function test() {
-  console.log('test');
+  console.log("test");
 }
 
-printMe()
+printMe();
 test();
 
-
 // Async
-function printMe() {
-  console.log('print me');
-}
+// function printMe() {
+//   console.log('print me');
+// }
 
-function test() {
-  console.log('test');
-}
+// function test() {
+//   console.log('test');
+// }
 
 setTimeout(printMe, 2000);
 test();
